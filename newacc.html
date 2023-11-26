@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account Page</title>
+    <link rel="stylesheet" type="text/css" href="newacc.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Create Account Page</h2>
+        <form id="register-form"> <!-- Added id="register-form" -->
+            <div class="user-box">
+                <input type="text" name="username" id="username" required>
+                <label>Username</label>
+                <span id="username_error"></span>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" id="password" required>
+                <label>Password</label>
+                <span id="password_error"></span>
+            </div>
+            <div class="user-box">
+                <input type="password" name="confirm_password" id="confirm_password" required>
+                <label>Confirm Password</label>
+                <span id="confirm_password_error"></span>
+            </div>
+            <button type="submit" onclick="validateForm()">Submit</button>
+            <a href="login.html">Already have an account?</a>
+        </form>
+    </div>
+
+    <script src="newacc.js"></script>
+</body>
+</html>

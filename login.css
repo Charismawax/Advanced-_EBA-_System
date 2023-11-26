@@ -1,0 +1,79 @@
+body {
+	background-color: #e6e6e6;
+}
+
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: #fff;
+	padding: 40px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.login-box h2 {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.user-box {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.user-box input,
+.user-box select {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	border: none;
+	border-bottom: 1px solid #757575;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box select:focus ~ label,
+.user-box input:valid ~ label,
+.user-box select:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #6f39c4;
+	font-size: 14px;
+}
+
+.user-box button[type="submit"],
+.user-box a {
+	background: #6f39c4;
+	color: #fff;
+	border: none;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.user-box button[type="submit"]:hover,
+.user-box a:hover {
+	background-color: #5a258e;
+}
